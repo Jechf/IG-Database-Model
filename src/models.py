@@ -47,6 +47,7 @@ class User(Base):
     firtsname = Column(String(250), nullable=False)
     lastname = Column(String(250), nullable=False)
     email = Column(String(250), nullable=False)
+    password = Column(String(250), nullable=False)
     post = relationship(Post)
     comment = relationship(Comment)
     media = relationship(Media)
